@@ -1,6 +1,6 @@
 
 
-def main(input: str):
+def main(input: str) -> str:
     symbols = input.split()
 
     if len(symbols) != 3:
@@ -17,13 +17,13 @@ def main(input: str):
         raise Exception('Числа не могут быть меньше 1 и больше 10')
 
     if sign == '+':
-        return int(s1) + int(s2)
+        return str(int(s1) + int(s2))
     elif sign == '-':
-        return int(s1) - int(s2)
+        return str(int(s1) - int(s2))
     elif sign == '*':
-        return int(s1) * int(s2)
+        return str(int(s1) * int(s2))
     elif sign == '/':
-        return int(s1) // int(s2)
+        return str(int(s1) // int(s2))
 
 
 while True:
